@@ -1,1 +1,1 @@
-菜鸟教程：www.runoob.com
+第一个实例需要文件读取完成才能执行完程序，第二个不需要：www.runoob.com
