@@ -1,0 +1,21 @@
+##Buffer(缓冲区) 
+在javascript中没有二进制数据类型,但是处理像tcp流，必须使用二进制数据。因此在node中定义了一个Buffer类，该类用来创建一个专门存放二进制数据的缓存区。
+#创建Buffer类
+#1 创建长度为10字节的buffer实例
+   var buf=new Buffer(10);
+#2 通过给定的数组来创建Buffer实例
+   var buf=new Buffer([10,20,30,40]);
+#3 通过一个字符串来创建Buffer实例
+   var buf=new Buffer("www.runooob","utf-8");
+#写入缓存区
+   buf.write(string[,offset[,length]][,encoding])
+   string   写入缓存区的字符串
+   offset - 缓冲区开始写入的索引值，默认为 0 。
+   length - 写入的字节数，默认为 buffer.length
+   encoding - 使用的编码。默认为 'utf8' 。
+## 返回值##
+   返回实际写入的大小。如果buffer空间不足，则只会写入部分字符串
+# 从缓存区读数据 #
+  buf.toString([encoding[,start[,end]]])
+# 讲buffer转换成json对象#
+  buf.toJSON();
